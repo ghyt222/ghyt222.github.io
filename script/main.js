@@ -1,6 +1,6 @@
 var house_edge = 1; // House edge in %
 
-var betbase = new BetBaseAPI({ casino_id: '123asd' }); // Your casino identifier
+var betbase = new BetBaseAPI({ casino_id: 'nkpGnHCLjU' }); // Your casino identifier
 
 
 Big.RM = 0;
