@@ -1,0 +1,11 @@
+
+.icon-user:before { content: '\e800'; } /* '' */
+.icon-cancel:before { content: '\e801'; } /* '' */
+.icon-cancel-outline:before { content: '\e802'; } /* '' */
+.icon-cancel-1:before { content: '\e803'; } /* '' */
+.icon-cancel-2:before { content: '\e804'; } /* '' */
+.icon-cancel-circled:before { content: '\e805'; } /* '' */
+.icon-bitcoin-1:before { content: '\e806'; } /* '' */
+.icon-menu:before { content: '\e807'; } /* '' */
+.icon-bitcoin:before { content: '\f15a'; } /* '' */
+.icon-balance-scale:before { content: '\f24e'; } /* '' */

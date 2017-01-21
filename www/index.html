@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="./style/main.css">
+		<script type="text/javascript" src="./script/BetBaseAPI-v1.js"></script>
+		<script type="text/javascript" src="./script/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="./script/big.js"></script>
+		<script type="text/javascript" src="./script/main.js"></script>
+	</head>
+	<body>
+		<div class="page">
+			<div class="topline"></div>
+			<div class="container">
+				<div class="leftpanel">
+					<a href="#" onclick="location.reload();return false;" class="logo">ExampleDice</a>
+					<div class="balance-btc hideUnlogged"><span class="icon-bitcoin"></span> <span class="balances">0.00000000</span></div>
+					<div class="mF_w hideUnlogged">
+						<a href="#" class="moveFunds deposit">Deposit</a>
+						<a href="#" class="moveFunds withdraw">Withdraw</a>
+					</div>
+					<a href="#" onclick="javascript:betbase.login();return false;" class="menu-link"><span class="icon-user"></span> <span class="username">Log In</span></a>
+					<a href="#" onclick="javascript:betbase.fair();return false;" class="menu-link hideUnlogged"><span class="icon-balance-scale"></span> &nbsp;Provably fair</a>
+				</div>
+				<div class="rightpanel">
+					<div>
+						<a href="#" class="menu menu-open"><span class="icon-menu"></span></a>
+						<a href="#" class="menu menu-close"><span class="icon-cancel"></span></a>
+					</div>
+					<div class="betbox">
+						<div class="betbox-top">
+						  <div class="diceimg"></div>
+						</div>
+						<div class="betbox-content">
+							<div style="overflow: hidden;">
+								<div style="width: 49%;float:left;height:20px;line-height:20px;">	
+									<span class="aboveInput">Wager</span>
+								</div>
+								<div style="width: 49%;float:right;height:20px;line-height:20px;">	
+									<span class="aboveInput">Profit on win</span>
+								</div>
+							</div>
+							<div style="overflow: hidden;">
+								<div style="width: 49%;float:left;height:30px;">	
+									<input type="text" style="width:60%;border-right:none;" class="input-wager" value="0.00000000"><a href="#" class="brownbutton wager-2x" style="width:15%;">2x</a><a href="#" class="brownbutton wager-max" style="width:25%;">MAX</a>
+								</div>
+								<div style="width: 49%;float:right;height:30px;">	
+									<input type="text" style="width:100%;" value="0.00000000" class="input-profit" readonly>
+								</div>
+							</div>
+							<div style="overflow: hidden;margin-top:10px;">
+								<div style="width: 49%;float:left;height:20px;line-height:20px;">	
+									<span class="aboveInput">Win chance</span>
+								</div>
+								<div style="width: 49%;float:right;height:20px;line-height:20px;">	
+									<span class="aboveInput">Payout</span>
+								</div>
+							</div>
+							<div style="overflow: hidden;">
+								<div style="width: 49%;float:left;height:30px;">	
+									<input type="text" style="width:100%;" class="input-chance" value="49.50">
+								</div>
+								<div style="width: 49%;float:right;height:30px;position:relative;">	
+									<input type="text" style="width:100%;" value="02.00" class="input-payout">
+								</div>
+							</div>
+							<div style="overflow: hidden;margin-top:20px;">
+								<a href="#" class="betHighOrLow selected" data-highlow="low">
+									<div class="HoL-big">&lt;<span class="betLow">49.51</span></div>
+									<div class="HoL-small">Bet Low</div>
+								</a>
+								<a href="#" class="betHighOrLow" data-highlow="high">
+									<div class="HoL-big">&gt;<span class="betHigh">50.50</span></div>
+									<div class="HoL-small">Bet High</div>
+								</a>
+							</div>
+							<a href="#" class="bet">Roll dice</a>
+						</div>
+					</div>
+					
+
+					<a href="#" class="bets-switch initial" data-bets="all">All Bets</a>
+					<a href="#" class="bets-switch" data-bets="my">My Bets</a>
+					
+					<div class="bets">
+						<div class="betsFader">
+              <table class="betTable" data-bets="all">
+                <tr>
+                  <th>Bet ID</th>
+                  <th>User</th>
+                  <th>Time</th>
+                  <th>Wager</th>
+                  <th>Payout</th>
+                  <th>Roll</th>
+                  <th>Profit</th>
+                </tr>
+              </table>
+  						<table class="betTable" data-bets="my">
+                <tr>
+                  <th>Bet ID</th>
+                  <th>User</th>
+                  <th>Time</th>
+                  <th>Wager</th>
+                  <th>Payout</th>
+                  <th>Roll</th>
+                  <th>Profit</th>
+                </tr>
+              </table>
+            </div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<!-- http://pixelkit.com/previews/metro-ui-kit/ -->
